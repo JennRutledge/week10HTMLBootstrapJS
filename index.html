@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Log</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+<!-- Assignment is to create a single page website that contains a Bootstrap styled 
+    table representing data of my choice and a Bootstrap styled form that allows a 
+    user to add a new row to the table when clicking on submit. This is all done using 
+    HTML, Bootstrap and JavaScript -->
+
+</head>
+<body>
+    <!-- used HTML and Bootstrap to create the form. -->
+    <form>
+        <div class="form-group bg-success col-auto">
+            <label for="title" class="col-form-label-lg">Book Title:</label>
+            <input type="text" class="form-control-lg" id="title" name="title">
+            <label for="author" class="col-form-label-lg">Author:</label>
+            <input type="text" class="form-control-lg" id="author" name="author">
+            <label for="readBy" class="col-form-label-lg">Reading Participant</label>
+            <input type="text" class="form-control-lg" id="readBy" name="readBy">
+            <label for="dateRead" class="col-form-label-lg">Date Finished</label>
+            <input type="date" class="form-control-lg" id="dateRead" name="dateRead">
+            <input type="submit" id="submit" class="form-control-lg" value="submit" class="bg-warning">
+        </div> 
+    </form>
+
+    <!-- Used HTML and Bootstrap to create the initial table -->
+<div class="table-responsive">
+<table id='table' class="table table-success table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Reading Participant</th>
+        <th>Date Finished</th>
+    </tr>
+</table>
+</div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="bookLog.js"></script>
+</body>
+</html>
